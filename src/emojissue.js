@@ -15,7 +15,10 @@
   }
 
   // Positive Emojis
-  const positiveEmojis = ['heart', '+1', 'tada'];
+  const positiveEmojis = ['heart', '+1', 'tada', 'smile'];
+
+  // Negative Emojis
+  const negativeEmojis = ['-1', 'thinking_face']; // "thinking_face" is "confused"
 
   // Find most reacted comments
   const comments = document.querySelectorAll('.comment');
@@ -39,8 +42,18 @@
         return prev;
       }, 0);
 
+      const negativeScore = Array.from(reactions).reduce((prev, cur) => {
+        const alias = cur.getAttribute('alias');
+
+        if (negativeEmojis.indexOf(alias) !== -1) {
+          return prev + parseInt(cur.nextSibling.textContent.trim(), 10);
+        }
+
+        return prev;
+      }, 0);
+
       if (score > 0) {
-        mostReactedComments.push({ id: comment.id, score });
+        mostReactedComments.push({ id: comment.id, score, negativeScore });
       }
     }
   });
@@ -49,12 +62,15 @@
     return;
   }
 
-  const generateHTML = args => `
-    <span class="emoji">🤘</span> See #${args.currentIndex + 1}
-    <span class="reacts">+${args.topFive[args.currentIndex].score} Reacts</span>
-  `;
+  const generateHTML = args => {
+    let negativeReactString = '';
+    if (args.topFive[args.currentIndex].negativeScore > 0) {
+      negativeReactString = '-' + args.topFive[args.currentIndex].negativeScore;
+    }
+    return ('<span class="emoji">🤘</span> See #' + (args.currentIndex + 1) + ' <span class="reacts">+' + args.topFive[args.currentIndex].score + ' ' + negativeReactString + ' Reacts</span>');
+  };
 
-  const topFive = mostReactedComments.sort((a, b) => b.score - a.score).slice(0, 5);
+  const topFive = mostReactedComments.sort((a, b) => (b.score - b.negativeScore) - (a.score - a.negativeScore)).slice(0, 5);
   let currentIndex = 0;
 
   const button = document.createElement('button');
