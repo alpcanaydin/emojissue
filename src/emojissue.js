@@ -1,5 +1,5 @@
 (() => {
-  const REGEX = /https:\/\/github\.com\/(.*)\/(.*)\/issues\/(.*)/;
+  const REGEX = /https:\/\/github\.com\/(.*)\/(.*)\/(issues|pull)\/(.*)/;
   const previousContainer = document.getElementById('emojissue');
 
   if (!REGEX.test(document.location.href)) {
