@@ -2,7 +2,7 @@
 
 # Emojissue
 
-This is a **Google Chrome** and **Firefox** extension that lets you navigate between most positive reacted Github issue comments easily.
+This is a **Google Chrome** and **Firefox** extension that lets you navigate between top five positive reacted Github issue comments easily.
 
 ![Usage Video](https://user-images.githubusercontent.com/1801024/36064499-d1079cdc-0e9c-11e8-8c09-2a87cece5a2a.gif)
 
