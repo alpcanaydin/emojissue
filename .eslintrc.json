@@ -1,0 +1,11 @@
+{
+  "extends": ["airbnb-base", "prettier", "plugin:eslint-comments/recommended"],
+  "env": {
+    "browser": true,
+    "webextensions": true
+  },
+  "plugins": ["import", "prettier", "eslint-comments"],
+  "rules": {
+    "prettier/prettier": ["error"]
+  }
+}

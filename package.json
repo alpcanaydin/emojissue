@@ -1,0 +1,25 @@
+{
+  "name": "emojissue",
+  "version": "0.0.1",
+  "description": "View most positive reacted Github issue comments.",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alpcanaydin/emojissue"
+  },
+  "author": "Alpcan Aydin <alpcan@alpcanaydin.com> (https://github.com/alpcanaydin)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alpcanaydin/emojissue/issues"
+  },
+  "homepage": "https://github.com/alpcanaydin/emojissue",
+  "devDependencies": {
+    "eslint": "^4.17.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-eslint-comments": "^2.0.2",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "prettier": "^1.10.2"
+  }
+}

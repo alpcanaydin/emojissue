@@ -1,0 +1,23 @@
+.emojissueContainer {
+  position: fixed;
+  left: 16px;
+  bottom: 16px;
+}
+
+.emojissue {
+  background: #fff;
+  border: 1px solid #e3bf99;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #777;
+}
+
+.emojissue span.reacts {
+  font-size: 12px;
+  color: #999;
+}
+
+.emojissue:hover {
+  border-color: #c4a07a;
+}
