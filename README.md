@@ -12,3 +12,7 @@ This is a **Google Chrome** and **Firefox** extension that lets you navigate bet
 ## License
 
 See [LICENSE](https://github.com/alpcanaydin/emojissue/blob/master/LICENSE) for more details.
+
+## Contributors
+[@alpcanaydin](https://github.com/alpcanaydin)<br />
+[@fatihacet](https://github.com/fatihacet)
