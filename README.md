@@ -1,6 +1,5 @@
-![emojissue](https://user-images.githubusercontent.com/1801024/36065244-1dca045e-0ea9-11e8-9fe0-6547a27ee78e.png)
+# ![Emojissue logo](https://cdn.rawgit.com/alpcanaydin/emojissue/e3e2f43e/src/icons/icon48.png) Emojissue
 
-# Emojissue
 
 This is a **Google Chrome** and **Firefox** extension that lets you navigate between top five positive reacted Github issue comments easily.
 
@@ -13,3 +12,7 @@ This is a **Google Chrome** and **Firefox** extension that lets you navigate bet
 ## License
 
 See [LICENSE](https://github.com/alpcanaydin/emojissue/blob/master/LICENSE) for more details.
+
+## Contributors
+[@alpcanaydin](https://github.com/alpcanaydin)<br />
+[@fatihacet](https://github.com/fatihacet)
