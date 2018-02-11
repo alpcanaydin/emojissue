@@ -1,6 +1,6 @@
 {
   "name": "emojissue",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "View most positive reacted Github issue comments.",
   "main": "app.js",
   "repository": {
