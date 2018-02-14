@@ -18,10 +18,14 @@
   const positiveEmojis = ['heart', '+1', 'tada'];
 
   // Generate content
-  const generateHTML = args => `
-    <span class="emoji">🤘</span> See #${args.currentIndex + 1}
-    <span class="reacts">+${args.topFive[args.currentIndex].score} Reacts</span>
-  `;
+  const generateHTML = args => {
+    const reactionPlaceholder =
+      args.topFive[args.currentIndex].score > 1 ? 'reactions' : 'reaction';
+    return `
+      <span class="emoji">🤘</span> See #${args.currentIndex + 1}
+      <span class="reacts">+${args.topFive[args.currentIndex].score} ${reactionPlaceholder}</span>
+    `;
+  };
 
   // Collect top five reacted comments
   const collectMostReactedComments = allComments => {
