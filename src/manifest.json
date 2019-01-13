@@ -19,7 +19,7 @@
   "permissions": ["https://github.com/*", "tabs", "webNavigation"],
   "content_scripts": [
     {
-      "matches": ["https://github.com/*/*/issues/*"],
+      "matches": ["https://github.com/*/*/issues/*", "https://github.com/*/*/pull/*"],
       "css": ["emojissue.css"],
       "js": ["emojissue.js"],
       "run_at": "document_end"
